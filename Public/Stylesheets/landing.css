@@ -2,11 +2,34 @@ body {
   background-color: #000;
 }
 
+.jumbotron h1 {
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.94);
+  text-shadow: -1px 2px -1px rgba(0, 0, 0, 1);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+
+}
+
 .jumbotron {
   background-color: rgba(0,0,0,0);
-  text-shadow: -1px -1px 0px rgba(150, 150, 150, 0.94);
-  text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
 }
+
+.btn-outline-primary {
+  width: 10%;
+  border: .5px solid #3f4234;
+  background-color: #A1BBD0;
+  color: #3f4234;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.btn-outline-primary:hover {
+  background-color: #687672;
+  color: #D1A827;
+  border: 1px solid #D1A827;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
 
 #landing-header {
   z-index: 1;
@@ -16,7 +39,7 @@ body {
 }
 
 #landing-header h1 {
-  color: #fff;
+  color: #d1a827;
 }
 
 .slideshow {

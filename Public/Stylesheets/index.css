@@ -1,6 +1,15 @@
+/* Navbar CSS */
+
+
+/*==========================*/
 body {
 	background-color: black;
 }
+
+button {
+	outline: none!important;
+}
+
 
 .bg-inverse{
 	background-color: #A1BBD0!important;
@@ -8,13 +17,28 @@ body {
 
 a.nav-link {
 	color: #3F4234!important;
+	
+}
+
+a.nav-link:hover {
+	color: white!important;
 }
 
 .navbar-brand {
 	color: #3F4234!important;
 }
 
+.fa-bars {
+	color: #3F4234;
+}
+
 
 .navbar-inverse .navbar-toggler{
 	border-color: #D1A827!important;
 }
+
+.navbar-toggler{
+	background-image:;
+}
+
+

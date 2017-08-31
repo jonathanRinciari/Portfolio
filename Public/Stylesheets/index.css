@@ -62,6 +62,7 @@ a.nav-link:hover {
 }
 
 .expertise-container {
+	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -72,22 +73,71 @@ a.nav-link:hover {
 	.header {
 		display:flex;
 		flex-direction: row;
-
+		width: 100%;
+		justify-content: space-around;
 	}
 
-	.expertise-grid {
-		display: flex;
-		margin-top: 200px;
-		flex-direction: row;
-		justify-content: center;
-	}
+
+
 
 	.expertise-container {
-		display:flex;
-		flex-direction: row;
+		margin-top: 50px;
+		
+}
 	}
+
+
+.pt-page-scaleDown {
+	animation: scaleDown .7s ease both;
 }
 
+.pt-page-scaleUp {
+	animation: scaleUp .7s ease both;
+}
+
+.pt-page-scaleUpDown {
+	animation: scaleUpDown .5s ease both;
+}
+
+.pt-page-scaleDownUp {
+	animation: scaleDownUp .5s ease both;
+}
+
+.pt-page-scaleDownCenter {
+	animation: scaleDownCenter .4s ease-in both;
+}
+
+.pt-page-scaleUpCenter {
+	animation: scaleUpCenter .4s ease-out both;
+}
+
+/************ keyframes ************/
+
+/* scale and fade */
+
+@keyframes scaleDown {
+	to { opacity: 0; transform: scale(.8); }
+}
+
+@keyframes scaleUp {
+	from { opacity: 0; transform: scale(.8); }
+}
+
+@keyframes scaleUpDown {
+	from { opacity: 0; transform: scale(1.2); }
+}
+
+@keyframes scaleDownUp {
+	to { opacity: 0; transform: scale(1.2); }
+}
+
+@keyframes scaleDownCenter {
+	to { opacity: 0; transform: scale(.7); }
+}
+
+@keyframes scaleUpCenter {
+	from { opacity: 0; transform: scale(.7); }
+}
 
 
 

@@ -3,7 +3,7 @@
 
 /*==========================*/
 body {
-	background-color: black;
+	background-color: gray;
 }
 
 button {
@@ -40,5 +40,57 @@ a.nav-link:hover {
 .navbar-toggler{
 	background-image:;
 }
+
+/* HEADER MOBILE*/
+
+
+
+.header {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 60px;
+
+}
+
+.expertise-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+
+}
+
+.expertise-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media screen and (min-width:650px)
+{
+	.header {
+		display:flex;
+		flex-direction: row;
+
+	}
+
+	.expertise-grid {
+		display: flex;
+		margin-top: 200px;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.expertise-container {
+		display:flex;
+		flex-direction: row;
+	}
+}
+
+
+
+
+
 
 

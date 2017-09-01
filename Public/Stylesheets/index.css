@@ -4,13 +4,21 @@
 /*==========================*/
 body {
 	background-image: url("../images/Background.png");
-  width: 100%;
+	background-size: contain;
+	width: 100%;
+	
+	
+
 }
 
 button {
 	outline: none!important;
 }
 
+#logo {
+  width: 100px;
+  height: 75px;
+}
 
 .bg-inverse{
 	background-color: #A1BBD0!important;
@@ -18,6 +26,8 @@ button {
 
 a.nav-link {
 	color: #3F4234!important;
+	width: 90px;
+	float: left;
 	
 }
 

@@ -14,7 +14,7 @@ body {
 }
 
 .btn-outline-primary {
-  width: 10%;
+  width: auto;
   border: .5px solid #3f4234;
   background-color: #A1BBD0;
   color: #3f4234;

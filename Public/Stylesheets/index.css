@@ -17,8 +17,9 @@ button {
 
 #logo {
   width: 100px;
-  height: 75px;
+  height: 60px;
 }
+
 
 .bg-inverse{
 	background-color: #A1BBD0!important;
@@ -28,6 +29,8 @@ a.nav-link {
 	color: #3F4234!important;
 	width: 90px;
 	float: left;
+	font-family: 'Merriweather', serif;
+
 	
 }
 
@@ -55,7 +58,11 @@ a.nav-link:hover {
   color: #F4E7D7;
   font-size: 22px;
   text-shadow: -1px 0px 0px rgba(244, 231, 215, 0.93);
+  font-family: 'Merriweather', serif;
+}
 
+.fa-pencil-square-o {
+	padding-left: 18px;
 }
 
 
@@ -64,15 +71,20 @@ a.nav-link:hover {
 	border-color: #D1A827!important;
 }
 
+/* About Section */
 .thumbnail {
   width: 50px;
   height: 50px;
 }
 
+
+
 .about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 90px;
+  margin-bottom: 50px;
  
 }
 

@@ -8,12 +8,9 @@ nav {
 }
 
 body {
-	background-image: url("../images/Background6.jpg");
+	background-image: url("../images/Background4.jpg");
 	background-size: cover;
-	background-position: 50px
-	width: 100%;
-	
-	
+	background-position: center;
 
 }
 

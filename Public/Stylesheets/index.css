@@ -8,9 +8,14 @@ nav {
 }
 
 body {
-	background-image: url("../images/Background4.jpg");
-	background-size: cover;
-	background-position: center;
+	background: url("../images/non-Blurred.png")no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+	/*background-size: cover;
+	background-position: center;*/
 
 }
 
@@ -50,7 +55,7 @@ a.nav-link:hover {
 }
 
 .fa-code, .fa-pencil-square-o, .fa-lightbulb-o {
-  color: #D1A827;
+  color: #687672;
 
 }
 

@@ -8,6 +8,10 @@ app.get("/", function(req, res){
 	res.render("LandingPage")
 });
 
+app.get("/contact", function(req, res){
+	res.render("contact");
+});
+
 app.get("/homepage", function(req, res){
 	res.render("homepage")
 });

@@ -2,9 +2,15 @@
 
 
 /*==========================*/
+
+nav {
+	border-bottom: .5px solid #D1A827;
+}
+
 body {
-	background-image: url("../images/Background.png");
-	background-size: contain;
+	background-image: url("../images/Background6.jpg");
+	background-size: cover;
+	background-position: 50px
 	width: 100%;
 	
 	
@@ -48,6 +54,7 @@ a.nav-link:hover {
 
 .fa-code, .fa-pencil-square-o, .fa-lightbulb-o {
   color: #D1A827;
+
 }
 
 .fa-code:hover, .fa-pencil-square-o:hover, .fa-lightbulb-o:hover {
@@ -57,7 +64,10 @@ a.nav-link:hover {
 .icon-font {
   color: #F4E7D7;
   font-size: 22px;
-  text-shadow: -1px 0px 0px rgba(244, 231, 215, 0.93);
+  text-shadow: 0.02em 0 rgba(0,0,0,.5), 0 0.02em rgba(0,0,0,.5), 
+	-0.02em 0 rgba(0,0,0,.5), 0 -0.02em rgba(0,0,0,.5), 
+	-0.02em -0.02em rgba(0,0,0,.5), -0.02em 0.02em rgba(0,0,0,.5),
+	0.02em -0.02em rgba(0,0,0,.5), 0.02em 0.02em rgba(0,0,0,.5);
   font-family: 'Merriweather', serif;
 }
 
@@ -85,9 +95,17 @@ a.nav-link:hover {
   align-items: center;
   margin-top: 60px;
   margin-bottom: 50px;
+  font-family: 'Merriweather', serif;
  
 }
 
+div > h1 {
+
+	font-family: 'Merriweather', serif;
+	font-size: 40px;
+
+text-shadow: 1px 1px 0px #A1BBD0, 5px 3px 0px rgba(0,0,0,0.15);
+}
 
 .about-grid {
   display: flex;
@@ -100,6 +118,15 @@ a.nav-link:hover {
 	margin: 40px auto;
 	padding: 20px 10px;
 	text-align: center;
+	font-family: 'Merriweather', serif;
+	line-height: 1.6em;
+	color: #F4E7D7 ;
+	font-size: 18px;
+	letter-spacing: .1em;
+	text-shadow: 0.02em 0 rgba(0,0,0,.5), 0 0.02em rgba(0,0,0,.5), 
+	-0.02em 0 rgba(0,0,0,.5), 0 -0.02em rgba(0,0,0,.5), 
+	-0.02em -0.02em rgba(0,0,0,.5), -0.02em 0.02em rgba(0,0,0,.5),
+	0.02em -0.02em rgba(0,0,0,.5), 0.02em 0.02em rgba(0,0,0,.5);
 }
 
 /* HEADER MOBILE*/
@@ -110,7 +137,7 @@ a.nav-link:hover {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
-  margin-top: 10px;
+  	margin-top: 10px;
 
 }
 

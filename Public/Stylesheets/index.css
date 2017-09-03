@@ -8,7 +8,7 @@ nav {
 }
 
 body {
-	background: url("../images/non-Blurred.png")no-repeat center center fixed; 
+	background: url("../images/contrastbg.png")no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,6 +23,8 @@ button {
 	outline: none!important;
 }
 
+
+
 #logo {
   width: 100px;
   height: 60px;
@@ -35,7 +37,6 @@ button {
 
 a.nav-link {
 	color: #3F4234!important;
-	width: 90px;
 	float: left;
 	font-family: 'Merriweather', serif;
 
@@ -55,12 +56,13 @@ a.nav-link:hover {
 }
 
 .fa-code, .fa-pencil-square-o, .fa-lightbulb-o {
-  color: #687672;
+  color: #3F4234;
 
 }
 
 .fa-code:hover, .fa-pencil-square-o:hover, .fa-lightbulb-o:hover {
   color: #F4E7D7;
+ 
 }
 
 .icon-font {
@@ -228,3 +230,21 @@ text-shadow: 1px 1px 0px #A1BBD0, 5px 3px 0px rgba(0,0,0,0.15);
 }
 
 
+
+/* Footer Icons */
+
+footer {
+	margin-bottom: 10px;
+}
+
+.footer-icons a {
+	float: right;
+	padding-left: 5px;
+	margin-right: 15px; 
+	color: #3F4234;
+
+}
+
+.fa-linkedin:hover, .fa-github:hover, .fa-twitter:hover {
+	color: #F4E7D7;
+}

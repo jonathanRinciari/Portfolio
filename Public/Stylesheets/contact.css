@@ -14,14 +14,19 @@
 }
 
 .contact-grid input {
-	width: 300px;
+	width: 400px;
 	margin-top: 5px;
+	outline: none;
+	border-radius: 5px;
+	border: .5px solid black;
 }
 
 .contact-grid textarea {
-	width: 300px;
+	width: 400px;
 	height: 200px;
 	margin-top: 5px;
+	outline:none;
+	border-radius: 5px;
 }
 
 .contact-grid {
@@ -29,7 +34,25 @@
 	flex-direction: column;
 }
 
+.contact-grid button {
+	background-color: #3F4234;
+	border-radius: 5px;
+	color: #D1A827;
+	border-color: #D1A827;
+	outline: none;
+}
+
+.contact-grid button:hover {
+	background-color: #A1BDD0;
+	border-color: #3F4234;
+	color: #3F4234;
+}
 
 h1.contact-container {
 	align-self: center;
 }
+
+ /*.contact-grid input:focus:invalid, .contact-grid textarea:focus:invalid {
+ 	background: #fff url(/images/error.png) no-repeat 98% center;
+	border-color: red;
+}*/

@@ -4,25 +4,27 @@
 	<div class="contact-container">
 		<h1> Just A few Quick Questions</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate autem aspernatur voluptatibus doloremque? Ab placeat fugiat, ratione minus. Repellendus quidem deserunt ad soluta natus facere sapiente libero quisquam odit neque.</p>
-
-		<form action="/contact" method="POST" class="contact-grid">
-			<label>
-				<input type="text" placeholder="Name" name="name" required>
-			</label>
-			<label>
-				<input type="email" placeholder="Email" name="email" required>
-			</label>
-			<label>
-				<input type="number" placeholder="Budget" name="price" min="1" required> 
-			</label>
-			<label>
-				<input type="text" name="date" placeholder="Deadline" required>
-			</label>
-			<label>
-				<textarea name="message" placeholder="Tell me about your project"></textarea>
-			</label>
-			 <button class="btn btn-primary"> Submit! </button>
-		</form>
+		
+		<fieldset>
+			<form action="/contact" method="POST" class="contact-grid">
+				<label>
+					<input type="text" placeholder=" Name" name="name" required>
+				</label>
+				<label>
+					<input type="email" placeholder=" Email" name="email" required>
+				</label>
+				<label>
+					<input type="number" placeholder=" Budget" name="price" min="1" required> 
+				</label>
+				<label>
+					<input type="text" name="date" placeholder=" Deadline" required>
+				</label>
+				<label> 
+					<textarea name="message" placeholder=" Tell me about your project" required></textarea>
+				</label>
+				<button class="btn btn-primary"> Submit! </button>
+			</form>
+		</fieldset>
 	</div>
 
 </section>

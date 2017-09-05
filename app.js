@@ -67,6 +67,10 @@ app.get("/success", function(req, res){
 	res.render("success");
 });
 
+app.get("/about", function(req, res){
+	res.render("about");
+});
+
 
 
 

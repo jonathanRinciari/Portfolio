@@ -28,13 +28,15 @@ app.post("/contact", function(req, res){
 
 	}));
 
+	var contactInfo =  ("Message: " + req.body.message + ",  Budget: " + req.body.price + ",  Deadline: " + req.body.date)
+
+	console.log(contactInfo)
 	mailOpts = {
-		from: req.body.name + ' &lt;' + req.body.email + '%gt;',
+		sender: req.body.email,
 		to: 'rinciarijoc@gmail.com',
-		subject: 'Website Contact Form' + req.body.name,
-		text: "message" + req.body.message,
-		date: req.body.date,
-		budget: req.body.price
+		subject: 'Website Contact Form: ' + req.body.name + "  (" + req.body.email + ")",
+		text: contactInfo
+		
 	
 	};
 

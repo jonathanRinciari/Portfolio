@@ -58,7 +58,7 @@ app.post("/contact", function(req, res){
 			}
 		})
 
-})
+});
 
 app.get("/homepage", function(req, res){
 	res.render("homepage");

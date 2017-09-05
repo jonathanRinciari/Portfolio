@@ -48,13 +48,8 @@ app.post("/contact", function(req, res){
 				err: true,
 				page: "contact"})
 			} else {
-				console.log("success")
-				res.render("contact", {
-					title: "Jon Rinciari - Contact",
-					msg: "Message Sent!",
-					err: false,
-					page: "Contact"
-				})
+				res.redirect("success")
+				
 			}
 		})
 
@@ -68,7 +63,9 @@ app.get("/about", function(req, res){
 	res.render("about");
 });
 
-
+app.get("/success", function(req, res){
+	res.render("success");
+});
 
 
 

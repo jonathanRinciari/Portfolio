@@ -14,7 +14,7 @@
 }
 
 .contact-grid input {
-	width: 400px;
+	width: 300px;
 	margin-top: 5px;
 	border-radius: 5px;
 	border: .5px solid gray;
@@ -23,7 +23,7 @@
 }
 
 .contact-grid select {
-	width: 400px;
+	width: 300px;
 	height: 36px;
 	padding: 5px 10px;
 	margin-top: 5px;
@@ -33,7 +33,7 @@
 }
 
 .contact-grid textarea {
-	width: 400px;
+	width: 300px;
 	height: 200px;
 	margin-top: 5px;
 	outline-color: #D1A827;
@@ -65,7 +65,16 @@ h1.contact-container {
 	align-self: center;
 }
 
- /*.contact-grid input:focus:invalid, .contact-grid textarea:focus:invalid {
- 	background: #fff url(/images/error.png) no-repeat 98% center;
-	border-color: red;
-}*/
+
+@media screen and (min-width: 430px) {
+	.contact-grid textarea {
+		width: 400px;
+		}
+	.contact-grid select {
+	width: 400px;
+		}
+	.contact-grid input {
+	width: 400px;
+		}
+
+	}

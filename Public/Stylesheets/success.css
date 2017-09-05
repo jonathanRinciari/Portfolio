@@ -4,12 +4,55 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Merriweather', serif;
+  
 }
+
 
 .success-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 10%;
-	padding: 15% auto;
+	margin-top: 20%;
+	padding: 0px 10%;
 }
+
+.success-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20%;
+
+	
+}
+
+#sgh3 {
+	text-align: center;
+}
+
+.btn {
+	margin-top: 15px;
+	background-color: #A1BBD0;
+	border-color: #3F4234;
+	color: #3F4234;
+}
+
+.btn:hover {
+	background-color: #3F4234;
+	border-color: #A1BBD0;
+	color: #A1BBD0;
+}
+
+h1, h3 {
+	margin-top: 15px;
+}
+
+i {
+	color: green;
+}
+
+
+
+
+
+

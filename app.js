@@ -72,7 +72,7 @@ app.get("/about", function(req, res){
 });
 
 app.get("/ideas", function(req, res){
-	res.render("about");
+	res.render("ideas");
 });
 
 app.get("/design", function(req, res){

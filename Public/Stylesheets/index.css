@@ -95,8 +95,8 @@ a.nav-link:hover {
 /* About Section Grid */
 
 .thumbnail {
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
 }
 
 button.navbar-toggler {
@@ -177,6 +177,11 @@ button.navbar-toggler {
 		flex-direction: row;
 		width: 100%;
 		justify-content: space-around;
+	}
+
+	.thumbnail {
+		width: 40%;
+		height: 40%;
 	}
 
 

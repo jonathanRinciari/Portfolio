@@ -83,6 +83,9 @@ app.get("/skills", function(req, res){
 	res.render("skills");
 });
 
+app.get("/portfolio", function(req, res){
+	res.render("portfolio");
+});
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')

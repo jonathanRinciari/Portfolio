@@ -60,6 +60,9 @@
 	border-color: #3F4234;
 	color: #3F4234;
 }
+.contact-grid button:active {
+	box-shadow: 2px 2px 10px black;
+}
 
 h1.contact-container {
 	align-self: center;

@@ -71,7 +71,17 @@ app.get("/about", function(req, res){
 	res.render("about");
 });
 
+app.get("/ideas", function(req, res){
+	res.render("about");
+});
 
+app.get("/design", function(req, res){
+	res.render("design");
+});
+
+app.get("/skills", function(req, res){
+	res.render("skills");
+});
 
 
 app.listen(3000, function () {

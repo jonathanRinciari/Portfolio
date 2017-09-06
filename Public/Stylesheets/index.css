@@ -97,6 +97,8 @@ a.nav-link:hover {
 .thumbnail {
   width: 80%;
   height: 80%;
+ 
+
 }
 
 button.navbar-toggler {
@@ -189,9 +191,9 @@ button.navbar-toggler {
 
 
 }
-}
 
-@media screen and (min-width:650px)
+
+@media screen and (min-width:760px)
 {
 	.header {
 		display:flex;
@@ -201,8 +203,11 @@ button.navbar-toggler {
 	}
 
 	.thumbnail {
-		width: 40%;
-		height: 40%;
+		width: 50%;
+		max-width: 50%;
+		max-height: 50%;
+		height: 50%;
+	
 	}
 
 

@@ -110,10 +110,6 @@ app.get("/portfolio", function(req, res){
 	res.render("portfolio");
 });
 
-app.get("/blog", function(req, res){
-	res.render("blog");
-});
-
 app.get("/login", function(req, res){
 	res.render("login");
 });
@@ -123,6 +119,51 @@ app.post("/login", passport.authenticate("local", {
   failureRedirect: "/login"
 
 }), function(req, res) {});
+
+//blog routes
+
+//index
+app.get("/blogs", function(req, res) {
+  //get all blogs from db
+  Blog.find({}, function(err, allBlogs) {
+    if (err) {
+      console.log(err);
+    }
+    else {
+      res.render("blogs", { blogs: allBlogs });
+    }
+  })
+
+});
+//Create Route - Add new Blog to DB
+
+app.post("/", function(req, res) {
+  var name = req.body.name;
+  var image = req.body.image;
+  var desc = req.body.campDescription;
+  var newBlog = { name: name, image: image, description: desc};
+
+  Blog.create(newBlog, function(err, newlyCreated) {
+    if (err) {
+      console.log(err);
+    }
+    else {
+      res.redirect("/blogs")
+    }
+  })
+});
+
+app.get("/new", function(req, res){
+	res.render("campgrounds/new");
+})
+
+
+
+
+
+
+
+
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')

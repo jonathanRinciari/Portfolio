@@ -11,7 +11,7 @@ var express = require("express"),
 	app = express();
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27018/portfolio_blog", {useMongoClient: true})
+mongoose.connect("mongodb://localhost:27018/blog", {useMongoClient: true})
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
@@ -115,7 +115,7 @@ app.get("/login", function(req, res){
 });
 
 app.post("/login", passport.authenticate("local", {
-  successRedirect: "/blog",
+  successRedirect: "/blogs",
   failureRedirect: "/login"
 
 }), function(req, res) {});
@@ -137,10 +137,10 @@ app.get("/blogs", function(req, res) {
 });
 //Create Route - Add new Blog to DB
 
-app.post("/", function(req, res) {
+app.post("/blogs", function(req, res) {
   var name = req.body.name;
   var image = req.body.image;
-  var desc = req.body.campDescription;
+  var desc = req.body.description;
   var newBlog = { name: name, image: image, description: desc};
 
   Blog.create(newBlog, function(err, newlyCreated) {
@@ -153,14 +153,10 @@ app.post("/", function(req, res) {
   })
 });
 
-app.get("/new", function(req, res){
-	res.render("campgrounds/new");
-})
+app.get("/new", function(req, res) {
+  res.render("new");
 
-
-
-
-
+});
 
 
 

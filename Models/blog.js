@@ -1,5 +1,5 @@
-var mongoose = require("mongoose"),
-	passportLocalMongoose = require("passport-local-mongoose");
+var mongoose = require("mongoose");
+
 
 var BlogSchema = new mongoose.Schema({
 	name: String,
@@ -8,5 +8,4 @@ var BlogSchema = new mongoose.Schema({
 
 });
 
-BlogSchema.plugin(passportLocalMongoose);
 module.exports = mongoose.model("Blog", BlogSchema);

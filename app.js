@@ -8,6 +8,7 @@ var express = require("express"),
 	methodOverride = require("method-override"),
 	LocalStrategy = require("passport-local"),
 	nodemailer = require("nodemailer"),
+	middleware = require("./middleware"),
 	app = express();
 
 mongoose.Promise = global.Promise;
@@ -25,6 +26,7 @@ app.use(require("express-session")({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
+
 
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
@@ -137,7 +139,7 @@ app.get("/blogs", function(req, res) {
 });
 //Create Route - Add new Blog to DB
 
-app.post("/blogs", function(req, res) {
+app.post("/blogs", middleware.isLoggedIn ,function(req, res) {
   var name = req.body.name;
   var image = req.body.image;
   var desc = req.body.description;
@@ -153,11 +155,10 @@ app.post("/blogs", function(req, res) {
   })
 });
 
-app.get("/new", function(req, res) {
+app.get("/new",middleware.isLoggedIn ,function(req, res) {
   res.render("new");
 
 });
-
 
 
 

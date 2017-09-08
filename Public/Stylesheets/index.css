@@ -174,7 +174,7 @@ button.navbar-toggler {
 	align-items: center;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
 
 	footer {
 		position: absolute;
@@ -191,8 +191,8 @@ button.navbar-toggler {
 }
 	.footer-icons a {
 	float: right;
-	padding-left: 5px;
-	margin-right: 15px; 
+	padding-left: 4px;
+	margin-right: 5px; 
 	color: rgba(63, 66, 52, .95);
 
 
@@ -280,7 +280,7 @@ button.navbar-toggler {
 
 /* Footer Icons */
 
-@media screen and (min-width: 376px){
+@media screen and (min-width: 401px){
 
 
 footer {
@@ -294,7 +294,7 @@ footer {
 
 .footer-icons a {
 	float: right;
-	padding-left: 5px;
+	padding-left: 4px;
 	margin-right: 15px; 
 	color: rgba(63, 66, 52, .95);
 
@@ -302,6 +302,6 @@ footer {
 
 }
 
-.fa-linkedin:hover, .fa-github:hover, .fa-twitter:hover {
+.fa-linkedin:hover, .fa-github:hover, .fa-twitter:hover, .fa-lock:hover {
 	color: #F4E7D7;
 }

@@ -8,3 +8,15 @@
 .admin-btn {
 	max-width: 250px!important;
 }
+
+.blog-grid {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.btn-warning {
+	float: right;
+	margin-bottom: 20px;
+	justify-content: space-around;
+}

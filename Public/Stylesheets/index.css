@@ -67,7 +67,7 @@ a.nav-link:hover {
 }
 
 .navbar-brand {
-	color: #3F4234!important;
+	width: 100px;
 }
 
 .fa-bars {

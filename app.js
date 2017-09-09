@@ -117,7 +117,7 @@ app.get("/login", function(req, res){
 });
 
 app.post("/login", passport.authenticate("local", {
-  successRedirect: "/blogs",
+  successRedirect: "/admin",
   failureRedirect: "/login"
 
 }), function(req, res) {});
@@ -155,11 +155,26 @@ app.post("/blogs", middleware.isLoggedIn ,function(req, res) {
   })
 });
 
+app.get("/:id", function(req, res) {
+  //render based on ID
+  Blog.findById(req.params.id, function(err, foundBlog) {
+    if (err) {
+      console.log(err);
+    }
+    else {
+      res.render("show", { blog: foundBlog });
+    }
+  });
+});
+
 app.get("/new",middleware.isLoggedIn ,function(req, res) {
   res.render("new");
 
 });
 
+app.get("/admin", middleware.isLoggedIn, function(req, res){
+	res.render("admin");
+});
 
 
 app.listen(3000, function () {

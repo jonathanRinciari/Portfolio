@@ -2,4 +2,51 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 75px;
+}
+
+.blog-grid {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+img.blog-thumbnail  {
+	width: 275px;
+	height: 275px;
+	margin-top: 10px;
+	box-shadow: 4px 3px 5px;
+
+}
+ .blog-title {
+	text-align: center;
+	text-transform: capitalize;
+	font-family: 'Merriweather', serif;
+	font-size: 30px;
+	font-weight: bolder;
+	text-shadow: 1px 1px 0px #A1BBD0, 1px 3px 0px rgba(0,0,0,0.15);
+
+}
+
+
+p a.btn.btn-primary {
+	margin-top: 0px;
+	background-color: #3F4234;
+	border-radius: 5px;
+	color: #D1A827;
+	border-color: #A1BBD0;
+	width: 100%;
+	max-width: 100%;
+}
+
+p a.btn.btn-primary:hover {
+	background-color: #A1BDD0;
+	border-color: #3F4234;
+	color: #3F4234;
+}
+
+p a.btn.btn-primary:active {
+	box-shadow: 2px 2px 10px black;
 }

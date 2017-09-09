@@ -176,6 +176,33 @@ app.get("/admin", middleware.isLoggedIn, function(req, res){
 	res.render("admin");
 });
 
+app.get("/blogs/:id/edit", middleware.isLoggedIn, function(req, res) {
+  Blog.findById(req.params.id, function(err, foundBlog) {
+    res.render("edit", { blog: foundBlog });
+  });
+});
+
+app.put("/blogs/:id", middleware.isLoggedIn, function(req, res) {
+  Blog.findByIdAndUpdate(req.params.id, req.body.blog, function(err, updatedBlog) {
+    if (err) {
+      res.redirect("/blogs");
+    }
+    else {
+      res.redirect("/blogs/" + req.params.id)
+    }
+
+  });
+});
+
+app.delete("/blogs/:id", middleware.isLoggedIn, function(req, res) {
+  Blog.findByIdAndRemove(req.params.id, function(err) {
+    if (err) {
+      res.redirect("/blogs");
+    } {
+      res.redirect("/blogs");
+    }
+  });
+});
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')

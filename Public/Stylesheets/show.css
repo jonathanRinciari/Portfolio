@@ -1,0 +1,34 @@
+.blog-container-post {
+	margin-top: 75px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 150px;
+}
+
+.blog_post_image {
+	
+	width: 80%;
+	height: 80%;
+	max-width: 800px;
+	max-height: 800px;
+	box-shadow: 4px 3px 5px;
+}
+
+#blog_content {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Merriweather', serif;
+}
+
+.btn_back {
+	margin-top: 25px;
+	width: 40%;
+	max-width: 320px!important;
+}
+
+.h1-style {
+	text-transform: capitalize!important;
+}
+

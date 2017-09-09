@@ -1,15 +1,22 @@
 
 
-<% include ./partials/header %>
+<% include partials/header %>
+
+<div class="blog_header">
+	
+	<h1 class="h1-style"> My Blog </h1>
+	
+</div>
+
 <section class="blog-container">
-<h1 class="h1-style"> This Is My Blog</h1>
+
 
 	<% blogs.forEach(function(blog){ %>
 	<div class="blog-grid">
 			<h4 class="blog-title"> <%= blog.name %> </h4>
-			<img class="blog-thumbnail" src=" <%= blog.image %> ">
+			<img class="blog-thumbnail" src=" <%= blog.image %>">
 		<p>
-			<a href="<%=blog._id%>" class="btn btn-primary"> Read More </a>
+			<a href="/blogs/<%=blog._id%>" class="btn btn-primary"> Read More </a>
 		</p>
 	</div>
 	<% }) %>
@@ -30,4 +37,4 @@
 
 
 
-<% include ./partials/footer %>
+<% include partials/footer %>

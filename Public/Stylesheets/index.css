@@ -66,10 +66,6 @@ a.nav-link:hover {
 	color: #F4E7D7!important;
 }
 
-.navbar-brand {
-	width: 100px;
-}
-
 .fa-bars {
 	color: #3F4234;
 }
@@ -201,6 +197,12 @@ button.navbar-toggler {
 
 }
 
+@media screen and (max-width: 767px){
+	
+	.navbar-brand {
+		width: 100px;
+	}
+}
 
 @media screen and (min-width:760px)
 {

@@ -13,6 +13,7 @@
 
 .portfolio-img {
 	margin-top: 30px;
+	max-width: 500px;
 	width: 90%;
 	height: 90%;
 	box-shadow: 2px 2px 10px black;
@@ -30,10 +31,6 @@
 	box-shadow: 2px 2px 10px black;
 }
 
-section figcaption {
-	margin-top: 8px;
-
-}
 
 
 
@@ -43,9 +40,12 @@ section figcaption {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		max-width: 500px;
 	}
 
 	.portfolio-img {
+		min-width: 500px;
+		max-width: 750px;
 		width: 40%;
 		height: 40%;
 	}

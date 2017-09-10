@@ -37,3 +37,9 @@
 .blog-h1 {
 	text-align: center;
 }
+
+div.blog-grid {
+	box-shadow: 0px 0px 10px;
+	padding: 0px 40px;
+	padding-top: 20px;
+}

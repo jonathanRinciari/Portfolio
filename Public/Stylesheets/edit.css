@@ -16,6 +16,9 @@
 }
 
 .inpt-desc {
+	width: 400px;
+	padding-left: 10px;
+	margin-top: 10px;
 	height: 90px;
-	padding-bottom: 50px;
+	
 }

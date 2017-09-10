@@ -9,14 +9,19 @@
 	max-width: 250px!important;
 }
 
-.blog-grid {
+
+
+.btn-danger, .btn-warning{
+	
+	width: 80px;
+	margin-top: 15px;
+	margin-left: 10px;
+	
+}
+
+
+#blog-buttons {
 	display: flex;
 	flex-direction: row;
 
-}
-
-.btn-warning {
-	float: right;
-	margin-bottom: 20px;
-	justify-content: space-around;
 }

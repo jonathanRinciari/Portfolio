@@ -9,15 +9,17 @@
 	
 	<a href="/blogs" class="btn btn-primary btn_back">Go Back</a>
 
-</section>
-
-
+	<div id="blog-buttons">
 		<a  class="btn btn-warning" href="/blogs/<%=blog._id%>/edit">Edit</a>
 
 		<form  action="/blogs/<%=blog._id%>?_method=DELETE" method="POST">
 		<button class="btn btn-danger">Delete</button>
 		</form>
-	
+	</div>
+
+</section>
+
+
 
 
                

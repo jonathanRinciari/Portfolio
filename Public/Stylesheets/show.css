@@ -23,7 +23,8 @@
 }
 
 .btn_back {
-	margin-top: 25px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	width: 40%;
 	max-width: 320px!important;
 }
@@ -32,3 +33,6 @@
 	text-transform: capitalize!important;
 }
 
+.blog-h1 {
+	text-align: center;
+}

@@ -2,20 +2,24 @@
 
 <section class="blog-container-post">
 
-	<h1 class="h1-style"><%=blog.name%></h1>
+	<h1 class="h1-style blog-h1"><%=blog.name%></h1>
 
 	<img class="blog_post_image" src="<%=blog.image%>">
 	<p id="blog_content"><%=blog.description%></p>
-	
+	<p>
+		<em>Submitted By: <%= blog.author.username %></em>
+	</p>
 	<a href="/blogs" class="btn btn-primary btn_back">Go Back</a>
-
+	
+	<% if(currentUser && blog.author.id.equals(currentUser._id)){ %>
 	<div id="blog-buttons">
 		<a  class="btn btn-warning" href="/blogs/<%=blog._id%>/edit">Edit</a>
 
 		<form  action="/blogs/<%=blog._id%>?_method=DELETE" method="POST">
 		<button class="btn btn-danger">Delete</button>
-		</form>
+		</form
 	</div>
+	<% } %>
 
 </section>
 

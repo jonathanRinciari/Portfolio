@@ -32,6 +32,13 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+app.use(function(req, res, next) {
+    res.locals.currentUser = req.user;
+    next();
+});
+
+
+
 
 app.get("/", function(req, res){
 	res.render("LandingPage");
@@ -143,7 +150,11 @@ app.post("/blogs", middleware.isLoggedIn ,function(req, res) {
   var name = req.body.name;
   var image = req.body.image;
   var desc = req.body.description;
-  var newBlog = { name: name, image: image, description: desc};
+  var author = {
+    id: req.user._id,
+    username: req.user.username
+  }
+  var newBlog = { name: name, image: image, description: desc, author: author};
 
   Blog.create(newBlog, function(err, newlyCreated) {
     if (err) {
@@ -162,7 +173,7 @@ app.get("/blogs/:id", function(req, res) {
       console.log(err);
     }
     else {
-      res.render("show", { blog: foundBlog });
+      res.render("show", { blog: foundBlog});
     }
   });
 });

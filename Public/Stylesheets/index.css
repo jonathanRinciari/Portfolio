@@ -7,6 +7,8 @@ nav {
 	border-bottom: .5px solid #D1A827;
 }
 
+
+
 body {
 	background: url("../images/lighter.png")no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -58,6 +60,27 @@ a.nav-link {
 
 	
 }
+
+
+hr.hr-styled { 
+  width: 70%;
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr.hr-styled:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
 
 a.nav-link:hover {
 	color: #F4E7D7!important;
@@ -121,7 +144,7 @@ button.navbar-toggler {
 
 .h1-style {
 	font-family: 'Merriweather', serif;
-	font-size: 40px;
+	font-size: 60px;
 	text-shadow: 1px 1px 0px #A1BBD0, 5px 3px 0px rgba(0,0,0,0.15);
 }
 

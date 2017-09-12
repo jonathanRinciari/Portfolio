@@ -18,6 +18,21 @@ section h3 {
 	
 }
 
+#skills-grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px ;
+
+}
+
+.skills-group {
+	margin-left: 30px ;
+
+}
+
+
+
 section a {
 	margin-top: 10px;
 }

@@ -43,8 +43,8 @@ img.blog-thumbnail  {
 
 @media screen and (min-width: 750px) {
 	img.blog-thumbnail  {
-		width: 450px;
-		height: 450px;	
+		width: 420px;
+		height: 420px;	
 	}
 
 	div.blog-grid {

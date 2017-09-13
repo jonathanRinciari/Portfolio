@@ -11,7 +11,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 750px;
+	width: 370px;
 	margin-bottom: 270px;
 }
 
@@ -39,3 +39,11 @@ input {
 }
 .login-button:active {
 	box-shadow: 2px .login-button
+
+
+
+@media screen and (min-width: 750px){
+	.login-grid {
+		width: 750px;
+	}		
+}

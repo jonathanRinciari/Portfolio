@@ -171,28 +171,34 @@ body {
 }
 
 
-/* @media screen (max-width: 500px;){
+ @media screen (max-width: 500px;){
   .slideshow li:nth-child(1) { 
   width: 500px;
+  height: 100%;
   background-image: url(/images/computer.jpg) 
 }
 .slideshow li:nth-child(2) { 
   width: 500px;
+
+  height: 100%;
   background-image: url(/images/lines.jpg);
   animation-delay: 10s; 
 }
 .slideshow li:nth-child(3) { 
   width: 500px;
+  height: 100%;
   background-image: url(/images/background.jpg);
   animation-delay: 20s; 
 }
 .slideshow li:nth-child(4) { 
   width: 500px;
+  height: 100%;
   background-image: url(/images/nature.jpg);
   animation-delay: 30s; 
 }
 .slideshow li:nth-child(5) { 
-  width: 100%
+  width: 500px;
+  height: 100%;
   background-image: url(/images/typing.jpg);
   animation-delay: 40s; 
 }

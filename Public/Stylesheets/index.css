@@ -18,11 +18,7 @@ body {
   
 }
 
-@media handheld, only screen and (max-width: 768px) { 
-	body {
-		background-attachment: scroll!important;
-	}
-}
+
 
 
 a.btn.btn-primary {
@@ -210,12 +206,16 @@ button.navbar-toggler {
 	footer {
 		position: relative;
 		font-size: 12px;
-		margin-top: 400px;
+		margin-top: 100px;
 		margin-right: 0px;
 		right: 0;
   		left: 0;
   		padding: 1rem;
   		color: rgba(63,66,52,.95);
+}
+
+body {
+	background-attachment: scroll!important;
 }
 		
 		

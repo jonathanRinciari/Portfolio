@@ -72,22 +72,22 @@ body {
 }
 
 .slideshow li:nth-child(1) { 
-  background-image: url(/images/computer.jpg) 
+  background-image: url(/Images/computer.jpg) 
 }
 .slideshow li:nth-child(2) { 
-  background-image: url(/images/lines.jpg);
+  background-image: url(/Images/lines.jpg);
   animation-delay: 10s; 
 }
 .slideshow li:nth-child(3) { 
-  background-image: url(/images/background.jpg);
+  background-image: url(/Images/background.jpg);
   animation-delay: 20s; 
 }
 .slideshow li:nth-child(4) { 
-  background-image: url(/images/nature.jpg);
+  background-image: url(/Images/nature.jpg);
   animation-delay: 30s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url(/images/typing.jpg);
+  background-image: url(/Images/typing.jpg);
   animation-delay: 40s; 
 }
 

@@ -33,10 +33,11 @@ img.blog-thumbnail  {
 }
  .blog-title {
 	text-align: center;
+	max-width: 260px;
+	max-height: 150px;
 	text-transform: capitalize;
 	font-family: 'Merriweather', serif;
-	font-size: 30px;
-	font-weight: bolder;
+	font-size: 28px;
 	text-shadow: 1px 1px 0px #A1BBD0, 1px 3px 0px rgba(0,0,0,0.15);
 	
 }

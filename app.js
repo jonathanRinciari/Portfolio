@@ -41,7 +41,7 @@ app.use(function(req, res, next) {
 
 
 app.get("/", function(req, res){
-	res.render("landingPage");
+	res.render("landingpage");
 });
 
 app.get("/contact", function(req, res){

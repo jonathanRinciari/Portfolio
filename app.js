@@ -12,10 +12,7 @@ var express = require("express"),
 	app = express();
 
 mongoose.Promise = global.Promise;
-console.log(process.env.DATABASEURL)
-// "mongodb://localhost:27018/blog"
-// mongodb://rinciarijoc@gmail.com:Thefreak1@ds135444.mlab.com:35444/portfolio
-mongoose.connect(process.env.DATABASEURL, {useMongoClient: true})
+mongoose.connect(process.env.DATABASEURL)
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));

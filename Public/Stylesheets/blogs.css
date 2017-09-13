@@ -28,7 +28,7 @@ img.blog-thumbnail  {
 	width: 300px;
 	height: 300px;
 	margin-top: 20px;
-	box-shadow: 4px 3px 5px;
+	box-shadow: 1px 1px 3px;
 
 }
  .blog-title {
@@ -41,6 +41,17 @@ img.blog-thumbnail  {
 	
 }
 
+@media screen and(min-width: 750px) {
+	img.blog-thumbnail  {
+		width: 450px;
+		height: 450px;	
+	}
+
+	div.blog-grid {
+		padding: 0px 40px;
+		padding-top: 20px;
+	}
+}
 
 
 

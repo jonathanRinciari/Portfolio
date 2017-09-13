@@ -25,8 +25,8 @@
 }
 
 img.blog-thumbnail  {
-	width: 300px;
-	height: 300px;
+	width: 270px;
+	height: 270px;
 	margin-top: 20px;
 	box-shadow: 1px 1px 3px;
 
@@ -41,7 +41,7 @@ img.blog-thumbnail  {
 	
 }
 
-@media screen and(min-width: 750px) {
+@media screen and (min-width: 750px) {
 	img.blog-thumbnail  {
 		width: 450px;
 		height: 450px;	

@@ -206,7 +206,7 @@ button.navbar-toggler {
 	footer {
 		position: relative;
 		font-size: 12px;
-		margin-top: 400px;
+		margin-top: 200px;
 		margin-right: 0px;
 		right: 0;
   		left: 0;
@@ -214,9 +214,9 @@ button.navbar-toggler {
   		color: rgba(63,66,52,.95);
 }
 
-body {
+/* body {
 	background-attachment: scroll!important;
-}
+} */
 		
 		
 }

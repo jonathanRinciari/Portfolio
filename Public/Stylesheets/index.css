@@ -7,7 +7,9 @@ nav {
 	border-bottom: .5px solid #D1A827;
 }
 
-
+html {
+	min-height: 100%;
+}
 
 body {
 	background: url("../Images/lighter.png")no-repeat center center fixed; 
@@ -144,7 +146,7 @@ button.navbar-toggler {
 
 .h1-style {
 	font-family: 'Merriweather', serif;
-	font-size: 60px;
+	font-size: 40px;
 	text-shadow: 1px 1px 0px #A1BBD0, 5px 3px 0px rgba(0,0,0,0.15);
 }
 

@@ -215,8 +215,9 @@ app.delete("/blogs/:id", middleware.isLoggedIn, function(req, res) {
   });
 });
 
+var port = process.env.PORT || 8080;
 
 
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log('Example app listening on port 3000!')
 })

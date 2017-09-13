@@ -63,7 +63,7 @@ app.post("/contact", function(req, res){
 
 	var contactInfo =  ("Message: " + req.body.message + ",  Budget: " + req.body.price + ",  Deadline: " + req.body.date)
 
-	console.log(contactInfo)
+	
 	mailOpts = {
 		sender: req.body.email,
 		to: 'rinciarijoc@gmail.com',
@@ -79,7 +79,8 @@ app.post("/contact", function(req, res){
 				title: "Jon Rinciari - Contact",
 				msg: "Error Occured, Message Not Sent",
 				err: true,
-				page: "contact"})
+        page: "contact"})
+        console.log("error")
 			} else {
 				res.redirect("success")
 				

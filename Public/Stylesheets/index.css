@@ -15,9 +15,16 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100%;
+  z-index: 1;
 }
-	/*background-size: cover;
-	background-position: center;*/
+
+@media handheld, only screen and (max-width: 768px) { 
+	body {
+		background-attachment: scroll!important;
+	}
+}
+
 
 a.btn.btn-primary {
 	background-color: #3F4234;
@@ -202,7 +209,7 @@ button.navbar-toggler {
 @media screen and (max-width: 400px) {
 
 	footer {
-		position: absolute;
+		position: relative;
 		font-size: 12px;
 		margin-top: 100px;
 		margin-right: 0px;

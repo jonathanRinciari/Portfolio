@@ -123,10 +123,10 @@ a.nav-link:hover {
 
 .thumbnail {
 
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
  
-
+/* changed from 70% */
 }
 
 button.navbar-toggler {

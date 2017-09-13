@@ -56,7 +56,7 @@ app.post("/contact", function(req, res){
 		service: 'Gmail',
 		auth: {
 			user: "rinciarijoc@gmail.com",
-			pass: "Thefreak1!@"
+			pass: process.env.EMAILPWD
 	}
 
 	}));

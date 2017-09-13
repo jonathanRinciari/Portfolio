@@ -7,9 +7,7 @@ nav {
 	border-bottom: .5px solid #D1A827;
 }
 
-html {
-	min-height: 100%;
-}
+
 
 body {
 	background: url("../Images/lighter.png")no-repeat center center fixed; 

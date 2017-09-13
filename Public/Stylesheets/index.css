@@ -15,8 +15,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
-  z-index: 1;
+  
 }
 
 @media handheld, only screen and (max-width: 768px) { 

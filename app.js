@@ -4,7 +4,7 @@ var express = require("express"),
 	mongoose = require("mongoose"),
 	passport = require("passport"),
 	User = require("./Models/user"),
-	Blog = require("./Models/blog"),
+	Blog = require("./Models/b``log"),
 	methodOverride = require("method-override"),
 	LocalStrategy = require("passport-local"),
 	nodemailer = require("nodemailer"),
@@ -12,7 +12,7 @@ var express = require("express"),
 	app = express();
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://jrince:Thefreak1@ds135444.mlab.com:35444/portfolio", {useMongoClient: true})
+mongoose.connect(process.env.DATABASEURL)
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
@@ -55,7 +55,7 @@ app.post("/contact", function(req, res){
 		service: 'Gmail',
 		auth: {
 			user: "rinciarijoc@gmail.com",
-			pass: "Thefreak1"
+			pass: process.env.EMAILPWD
 	}
 
 	}));
